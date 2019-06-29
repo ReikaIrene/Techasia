@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+
+    <title>Edustream - Staging - University</title>
+
+    <script>
+	var uploadImageUrl = 'https://edustream.stagingdevbox.com/assets/upload';
+</script>
+
+<link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/theme/vendor.css?v=3e4c497de3ab2eb3a94b6ffed407a3e8" rel="stylesheet"></link><link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/theme/flat-admin.css?v=51fc47a58aace3253270c12221d774ca" rel="stylesheet"></link><link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/theme/blue.css?v=2c3010364f65831fa5d61f3eb229adaf" rel="stylesheet"></link><link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/theme/blue-sky.css?v=8ef9b8130336f643d1c0e9f0c393505f" rel="stylesheet"></link><link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/theme/default.css?v=dc9131fdb540a56622f67bd537eb1a00" rel="stylesheet"></link><link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/theme/red.css?v=2be4b890a3d5954adbbd3477e0f76fe3" rel="stylesheet"></link><link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/theme/yellow.css?v=c3c7b4bba07f26a3a49bf7da65cd4288" rel="stylesheet"></link>
+<link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/lib/select2.min.css?v=54c65db4a94afde426124acd162afbdf" rel="stylesheet"></link>
+<link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/lib/bootstrap-datetimepicker.min.css?v=dccd112584daacbdedc96d4f9da53f9a" rel="stylesheet"></link><link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/lib/custom-bootstrap-margin-padding.css?v=3781fcd64b56c6214ec12272316f3fde" rel="stylesheet"></link><link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/lib/jquery-ui.min.css?v=b2f794b2ff16e69147d761f7f3a88fcc" rel="stylesheet"></link><link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/lib/lobipanel.min.css?v=2e7705f45674cb21741ef046666b4ee0" rel="stylesheet"></link><link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/lib/sweetalert.css?v=319f8f3763e3959e5c3493f40cbb92cf" rel="stylesheet"></link><link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/lib/toastr.min.css?v=f284028c678041d687c6f1be6968f68a" rel="stylesheet"></link><link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/lib/fastselect.min.css?v=62b753d109d901ddbffd74c6e135c0aa" rel="stylesheet"></link><link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/lib/summernote.css?v=0a8d9ea1ce8f721a114cb46e1a8bdf46" rel="stylesheet"></link><link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/lib/icomoon.css?v=4fdebb99c6f2cb006739f01803bf1fe0" rel="stylesheet"></link><link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/lib/iziModal.min.css?v=e573c4897745972e167a2739fc893812" rel="stylesheet"></link>
+<link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/library/ladda/css/ladda-themeless.min.css?v=d9995bad1beb3d9abbe899320749196b" rel="stylesheet"></link>
+<link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/style.css?v=3b03a2b8edc0c2dc5ff1880c0cb58ec8" rel="stylesheet"></link><link href="https://edustream.stagingdevbox.com/assets/admin/css/style.css?v=83264d7c3bd72d211baed3bfa5724c7e" rel="stylesheet"></link>
+	<link href="https://edustream.stagingdevbox.com/assets/wvi/cmscore/css/lib/vue2-animate.css?v=ffc1bc27a3ba8f991521218f4883d95f" rel="stylesheet"></link>
+        
+
+</head>
+
+<body id="app-layout">
+    <aside class="app-sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <img class="img-responsive logo-admin" style="padding-top:10px;" src="https://edustream.stagingdevbox.com/assets/admin/image/logo-new.png"/>
+        <button type="button" class="sidebar-toggle">
+            <i class="fa fa-times"></i>
+        </button>
+    </div>
+    <div class="sidebar-menu icon-small">
+        <ul class="sidebar-nav pt-15">
+            <li>
+                <a href="https://edustream.stagingdevbox.com/admin">
+                    <span class="icon">
+                        <i class="fa fa-dashboard"></i>
+                    </span>
+                    <span class="title">Dashboard</span>
+                </a>
+            </li>
+                                        <li>
+                    <a href="https://edustream.stagingdevbox.com/admin/scholarships">
+                        <span class="icon">
+                            <i class="fa fa-certificate"></i>
+                        </span>
+                        <span class="title">Scholarship</span>
+                    </a>
+                </li>
+                                        <li>
+                    <a href="https://edustream.stagingdevbox.com/admin/universities">
+                        <span class="icon">
+                            <i class="fa fa-university"></i>
+                        </span>
+                        <span class="title">University</span>
+                    </a>
+                </li>
+                                        <li>
+                    <a href="https://edustream.stagingdevbox.com/admin/faculties">
+                        <span class="icon">
+                            <i class="fa fa-university"></i>
+                        </span>
+                        <span class="title">Faculty</span>
+                    </a>
+                </li>
+                                        <li>
+                    <a href="https://edustream.stagingdevbox.com/admin/studyPrograms">
+                        <span class="icon">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Study Program</span>
+                    </a>
+                </li>
+                                        <li>
+                    <a href="https://edustream.stagingdevbox.com/admin/registrants">
+                        <span class="icon">
+                            <i class="fa fa-users"></i>
+                        </span>
+                        <span class="title">Registrant</span>
+                    </a>
+                </li>
+                                        <li class="dropdown">
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa fa-copy" aria-hidden="true"></i>
+                        </span>
+                        <span class="title"> Ujian</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <ul>
+                                                            <li class="dropdown">
+                                    <a href="https://edustream.stagingdevbox.com/admin/categories">Subjek Ujian</a>
+                                </li>
+                                                                                                                    <li class="dropdown">
+                                    <a href="https://edustream.stagingdevbox.com/admin/exams">Paket Ujian</a>
+                                </li>
+                                                                                        <li class="dropdown">
+                                    <a href="https://edustream.stagingdevbox.com/admin/results">Hasil Ujian</a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </li>
+                                        <li class="dropdown">
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa fa-book"></i>
+                        </span>
+                        <span class="title">Offer Letter</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li class="dropdown">
+                                <a href="https://edustream.stagingdevbox.com/admin/offerLetters">Template</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                                        <li class="dropdown">
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span class="title"> Report</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <ul>
+                                                            <li class="dropdown">
+                                    <a href="https://edustream.stagingdevbox.com/admin/reports/callCenter">Report Call Center</a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </li>
+                                        <li>
+                    <a href="https://edustream.stagingdevbox.com/admin/users">
+                        <span class="icon">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <span class="title">User</span>
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</aside>
+
+
+        
+    <div class="app-container">
+        <nav class="navbar navbar-default" id="navbar">
+    <div class="container-fluid">
+        <div class="navbar-collapse collapse in">
+            <ul class="nav navbar-nav navbar-mobile">
+                <li>
+                    <button type="button" class="sidebar-toggle">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </li>
+                <li class="logo">
+                    <a class="navbar-brand" href="#">Edustream - Staging</a>
+                </li>
+                <li>
+                    <button type="button" class="navbar-toggle">
+                        <div class="avatar-icon">
+                            <i class="avatar-icon fa fa-user" aria-hidden="true"></i>
+                        </div>
+                    </button>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left">
+                <li class="navbar-title">Create University</li>
+                            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <div class="text-right">
+                        <div class="username">Admin</div>
+                        <div class="email">admin@gmail.com</div>
+                    </div>
+                </li>
+                <li class="dropdown hidden-sm">
+                    <div class="dropdown-toggle"  data-toggle="dropdown">
+                        <div class="avatar-icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu">
+                        <div class="profile-info">
+                            <h4 class="username">Admin</h4>
+                        </div>
+                        <ul class="action">
+                            <li>
+                                <a href="/admin/profile">Profile</a>
+                            </li>
+                            <li>
+                                <a href="https://edustream.stagingdevbox.com/admin/logout">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown profile hidden-md hidden-lg">
+                    <a href="https://edustream.stagingdevbox.com/admin/user">
+                        <div class="title">Profile</div>
+                    </a>
+                </li>
+                <li class="dropdown profile hidden-md hidden-lg">
+                    <a href="https://edustream.stagingdevbox.com/admin/logout">
+                        <div class="title">Logout</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+        <div id="vueApp">                
+    <div class="row  hidden " id="alert-box">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="alert alert-danger alert-dismissible fade in" role="alert" id="alert-box-details">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    </div>
+    </div>
+</div>    <transition name="slideUp">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="alert alert-danger alert-dismissible" v-show="errors.length > 0" style="display:none;">
+                <li v-for="error in errors">
+                    {{ error }}
+                </li>
+            </div>
+        </div>
+    </transition>
+
+    <form id="mainForm" action="https://edustream.stagingdevbox.com/admin/university/0" v-on:submit="formSubmit" class="create-project form-horizontal" method="POST"  enctype="multipart/form-data">       
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">University</div>
+                    <div class="card-body">
+                        <div class="row">
+							<div class="col-md-12">
+								<div class="col-md-3">
+	                                <label class="control-label">Nama Universitas</label>
+	                            </div>
+	                            <div class="col-md-9">
+	                                <input class="form-control" v-model="name" type="text" />
+	                            </div>
+							</div>
+							<div class="col-md-12">
+								<div class="col-md-3">
+	                                <label class="control-label">Code</label>
+	                            </div>
+	                            <div class="col-md-9">
+	                                <input class="form-control" v-model="code" type="text" />
+	                            </div>
+							</div>
+							<div class="col-md-12">
+                                <div class="col-md-3">
+                                    <label class="control-label">Logo</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <vue-image v-model="logo" max-count="1"/>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-3">
+                                    <label class="control-label">Telepon</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input class="form-control" v-model="phone" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-3">
+                                    <label class="control-label">Kota</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <vue-select2-ajax url="https://edustream.stagingdevbox.com/admin/city/search" 
+                                        v-model="cityId" 
+                                        :selected-value="city.name"
+                                        :selected-object.sync="city">
+                                    </vue-select2-ajax>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-3">
+                                    <label class="control-label">Address</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <textarea v-model="address" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-3">
+                                    <label class="control-label">Status</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <select v-model="status" class="form-control">
+                                        <option value=""></option>
+                                                                                    <option value="ACTIVE">Active</option>
+                                                                                    <option value="INACTIVE">Inactive</option>
+                                                                            </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+            	<div class="card">
+            		<div class="card-header">University Credentials</div>
+            		<div class="card-body">
+            			<div class="row">
+            				<div class="col-md-12">
+            					<div class="col-md-3">
+	                                <label class="control-label">Base Api Url</label>
+	                            </div>
+	                            <div class="col-md-9">
+	                                <input class="form-control" v-model="universityCredential.baseApiUrl" type="text" />
+	                            </div>
+            				</div>
+            				<div class="col-md-12">
+            					<div class="col-md-3">
+	                                <label class="control-label">Whitelist Ip</label>
+	                            </div>
+	                            <div class="col-md-9">
+	                                <input class="form-control" v-model="universityCredential.whitelistIp" type="text" placeholder='ex : ["xxx.xxx.xxx.xxx"]' />
+	                            </div>
+            				</div>
+            				<div class="col-md-12">
+            					<div class="col-md-3">
+	                                <label class="control-label">Private Key</label>
+	                            </div>
+	                            <div class="col-md-9">
+	                                <input class="form-control" v-model="universityCredential.privateKey" type="text" :disabled="true" />
+	                            </div>
+            				</div>
+            			</div>
+            		</div>
+            	</div>
+            </div>
+            <div class="col-md-12">
+            	<div class="card">
+            		<div class="card-body text-right">
+            			<div class="row">
+                            <div class="col-md-12 text-right">
+                            	<a class="btn btn-default" href="https://edustream.stagingdevbox.com/admin/universities">Cancel</a> &nbsp;
+                                <button id="submitForm" class="btn btn-primary vueSubmit">Submit</button>
+                            </div>
+                        </div>
+            		</div>
+            	</div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+    	var vueData = [];
+
+    	            vueData.universityCredential = {
+                baseApiUrl: '',
+                whitelistIp: '',
+                privateKey: ''
+            };     
+    	
+                    vueData.city = {
+                id: '',
+                name: ''
+            };
+        
+    	function formSubmit(data) {
+    		data.errors = [];
+
+    		if (empty(data.name)) data.errors.push('Nama Universitas tidak boleh kosong');
+    		if (empty(data.code)) data.errors.push('Kode tidak boleh kosong');
+            if (empty(data.status)) data.errors.push('Status tidak boleh kosong');
+
+    		if (data.errors.length > 0) return false;
+
+    		return true;
+    	}
+    </script>
+
+        </div>
+        <footer class="app-footer">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="footer-copyright">
+                <br/>Copyright © 2019 Edustream - Staging
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <!-- Modal -->
+<div id="izimodal" aria-hidden="true" aria-labelledby="izimodal" role="dialog" class="iziModal" style="z-index: 999; border-radius: 3px; border-bottom: 3px solid rgb(189, 91, 91); overflow: hidden; max-width: 600px;">
+</div>
+
+<div class="modal fade" id="reset-password-modal-confirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">User Invited</h4>
+            </div>
+            <div class="modal-body">
+                We have successfully send your new password through email! <br/>
+            </div>
+            <div class="modal-footer">
+                <a href="https://edustream.stagingdevbox.com/admin/login">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-confirm-action" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">User Invited</h4>
+            </div>
+            <div class="modal-body">
+                We have successfully send your new password through email! <br/>
+            </div>
+            <div class="modal-footer">
+                <a href="https://edustream.stagingdevbox.com/admin/login">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-delete-alert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-center" id="myModalLabel">CONFIRM DELETE</h4>
+            </div>
+            <div class="modal-body text-center">
+                Please confirm to delete this Item. Once deleted, you must re-create this Item if needed. <br/>
+            </div>
+            <div class="modal-footer">
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 text-left">
+                        <a>
+                            <button type="button" class="btn btn-default btn-danger delete-button-confirm" >Delete</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-display-image" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header p-15" id="modalDisplayImageLabel">
+            </div>
+            <div class="modal-body p-15 text-center">
+                <img src="" alt="" class="img-thumbnail" id="modalDisplayImageSource">
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a download="" href="" class="btn btn-xs btn-primary" id="modalDisplayImageDownload">
+                            <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Download Image
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    <script>
+	var datatable = {};
+    var datatablePerPage = 10;
+</script>
+
+<script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/theme/vendor.js?v=b0078455e449123a50d7f7e6a1cb5a74"></script><script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/lib/select2.full.min.js?v=37befed5b538fbac224c5166e32f801b"></script>
+<script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/theme/app.js?v=256f7c1a90ed913eb3825c84216fec9b"></script>
+<script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/lib/moment.min.js?v=2ca656d29bd6f1ab8c812b1cf2d3d295"></script><script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/lib/bootstrap-datetimepicker.min.js?v=ec80168921520ed4d49370f048e0959b"></script>
+<script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/lib/autoNumeric.min.js?v=060fd39ad4601cff2dd9ef6896ee8267"></script><script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/lib/lobipanel.min.js?v=c6fdb9decac484b554a7ca041b265a9c"></script><script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/lib/sweetalert.min.js?v=0e2613ca4d17a624d7e9928acd07a7c6"></script><script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/lib/toastr.min.js?v=5073db5621cd33c12db0b7e7be45634a"></script><script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/lib/chart.js?v=4040c28732a4e3c43ba3fcac2dce45ac"></script><script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/lib/chart.util.js?v=ad3e3b8b20fa45a0b71607e06d576359"></script><script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/lib/fastselect.standalone.min.js?v=57ebb732a8cdc831a6c5b2e24f50b51f"></script><script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/lib/summernote.min.js?v=ac14d235931b666e855112e9f542dcd7"></script><script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/lib/iziModal.js?v=b7bb91ccea46ae0c520246ffa79c15c8"></script>
+<script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/library/ladda/js/spin.min.js?v=d08dc7853ab4b6d99b30fef776251408"></script><script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/library/ladda/js/ladda.min.js?v=7c78ade87514e7c5b2fe4d190ba1f414"></script><script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/library/ladda/js/ladda.jquery.min.js?v=8e9ba428068ddc03a7f015ae3665434a"></script>
+<script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/util.js?v=2b5b8d11521498f7bb5565862eef85d1"></script><script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/form-engine.js?v=06bd6ca0936a5e9742bd11e22910c50d"></script><script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/form-engine.autocomplete.js?v=b4810e702e4a25d2737e7add75775d72"></script><script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/datatable.js?v=2325b8c65efd292c599a459da0743239"></script><script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/chart.js?v=c377e0a50ca251ab6d365b395bd5fe49"></script>
+	<script>
+		var defaultMoney = {precision: 0, thousands: ".", decimal: ","};
+	</script>
+	<script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/lib/vue.min.js?v=3e7fd9458a2147045ce499aa4ccc27f6"></script>	<script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/lib/vue-the-mask.js?v=cd3e8740b82d0350986109749d4c01bb"></script>	<script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/lib/vue-money.min.js?v=0e272331d6ce92ef25cd2d4e39920e67"></script>
+	<script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/form-engine.vue.select2.js?v=baefb2a92777ff38565167a147f2b7f5"></script>	<script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/form-engine.vue.image.js?v=a2c0bbd153933aa5f86afb57eafd7d4e"></script>	<script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/form-engine.vue.autonumeric.js?v=46549d4d9cda200e056fe100bd685b0e"></script>	<script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/form-engine.vue.date.js?v=bb25f2efed7fe8c34a9e5c60599322f0"></script>
+	<script src="https://edustream.stagingdevbox.com/assets/wvi/cmscore/js/form-engine.vue.js?v=45bae58331182c0a1ebec0660cc418fe"></script>
+	<script>
+		var formRequired = [];
+		var formImage = [];
+		var languangeLabel = {"en":"English","id":"Indonesia","zh_SG":"Simplified Chinese"};
+	</script>
+
+
+        
+
+    
+</body>
+</html>
